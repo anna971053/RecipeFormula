@@ -1,0 +1,206 @@
+//header
+// Outer navigation wrapper
+.navigation {
+    height: $nav-height;
+    background: $nav-background;
+    
+}
+
+  // Logo and branding
+.brand {
+        position: absolute;
+        padding-left: 20px;
+        float: left;
+        line-height: $nav-height;
+        padding-top: 20px;
+        a{
+            width: 200px;
+            @include text-hidden;
+            background-image: url(../assets/Logo.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+}
+@include iphone-XR{
+    .brand a{
+        width: 160px;
+    }
+}
+  // Container with no padding for navbar
+.nav-container {
+    max-width: $content-width;
+    margin: 0 auto;
+}
+
+  // Navigation 
+nav {
+    float: right;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+        float: left;
+        position: relative;
+        a,
+        a:visited {
+            display: block;
+            padding: 0 20px;
+            line-height: $nav-height;
+            background: $nav-background;
+            color: $nav-font-color;
+            text-decoration: none;
+            &:hover {
+                background: $link-hover-color;
+                color: $nav-font-color;
+            }
+            &:not(:only-child):after {
+                padding-left: 4px;
+                content: ' ▾';
+            }
+            } // Dropdown list
+            ul li {
+            min-width: 190px;
+            a {
+                padding: 15px;
+                line-height: 20px;
+            }
+        }
+        }
+    }
+}
+
+  /* Mobile navigation */
+
+  // Binds to JS Toggle
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $nav-background;
+    height: $nav-height;
+    width: $nav-height;
+}
+@media only screen and (max-width: 798px) {
+    // Hamburger nav visible on mobile only
+    .nav-mobile {
+        display: block;
+    }
+    nav {
+        width: 100%;
+        padding: $nav-height 0 15px;
+        z-index: 100;
+        ul {
+        display: none;
+            li {
+                float: none;
+                a {
+                    padding: 15px;
+                    line-height: 20px;
+                }
+                ul li a {
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $breakpoint) {
+    .nav-list {
+        display: block !important;
+    }
+}
+#nav-toggle {
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+    span,
+    span:before,
+    span:after {
+        cursor: pointer;
+        border-radius: 1px;
+        height: 5px;
+        width: 35px;
+        background: $nav-font-color;
+        position: absolute;
+        display: block;
+        content: '';
+        transition: all 0.3s ease-in-out;
+    }
+    span:before {
+        top: -10px;
+    }
+    span:after {
+        bottom: -10px;
+    }
+    &.active span {
+        background-color: transparent;
+        padding-bottom: 285px;
+        &:before,
+        &:after {
+        top: 0;
+        }
+        &:before {
+        transform: rotate(45deg);
+        }
+        &:after {
+        transform: rotate(-45deg);
+        }
+    }
+}
+//footer
+.footer-container{
+    background: $green;
+    position: relative;
+    a{
+        color: $white;
+    }
+    .logo{
+        width: 200px;
+        height: 40px;
+        @include text-hidden;
+        background-image: url(../assets/Logo.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+.main-nav{
+    max-width: $content-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 2em;
+    align-items: center;
+    .header-search{
+        display: flex;
+        button,input{
+            border: none;
+            background-color: $white;
+            padding: 0x 10px;
+            height: 30px;
+        }
+        button:focus,input:focus{
+            outline: none;
+        }
+        button{
+            border-radius: 0 200px 200px 0;
+        }
+        input{
+            border-radius: 200px 0 0 200px;
+
+        }
+    }
+}
+@include iphone-XR{
+    .main-nav .header-search input {
+        width: 100px;
+      }
+}
+@include iphone-12pro{
+    .main-nav .header-search input {
+        width: 70px;
+      }
+}

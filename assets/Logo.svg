@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="445.531" height="73.404" viewBox="0 0 445.531 73.404">
+  <g id="Logo" transform="translate(-223.351 -58)">
+    <text id="Recipe_Formula" data-name="Recipe Formula" transform="translate(284 100)" fill="#fcb500" font-size="40" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">Recipe Formula</tspan></text>
+    <g id="icon-pan" transform="translate(-933.649 -641.573)">
+      <rect id="Rectangle_9" data-name="Rectangle 9" width="6.559" height="7.796" transform="matrix(0.826, 0.564, -0.564, 0.826, 1174.489, 744.757)" fill="#aaa8b9"/>
+      <rect id="Rectangle_10" data-name="Rectangle 10" width="9.71" height="21.716" rx="4.855" transform="matrix(0.813, 0.582, -0.582, 0.813, 1169.64, 748.801)" fill="#fa7902"/>
+      <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="20.826" cy="20.454" rx="20.826" ry="20.454" transform="translate(1167.413 710.5)" fill="#8e8d99"/>
+      <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="18.595" cy="18.966" rx="18.595" ry="18.966" transform="translate(1169.644 711.988)" fill="#9696a8"/>
+      <circle id="Ellipse_6" data-name="Ellipse 6" cx="14.876" cy="14.876" r="14.876" transform="translate(1173.363 716.45)" fill="#aaa8b9"/>
+    </g>
+    <g id="icon-_spatula" data-name="icon- spatula" transform="translate(-718.557 -365.786) rotate(-13)">
+      <rect id="Rectangle_11" data-name="Rectangle 11" width="5.506" height="24.409" transform="matrix(0.865, -0.502, 0.502, 0.865, 1214.05, 757.043)" fill="#fffbfb"/>
+      <path id="Path_5" data-name="Path 5" d="M42.481,42.811A12.8,12.8,0,1,1,64.543,30.2l.419.992A12.667,12.667,0,0,1,43.123,43.675Z" transform="translate(1157 710.5)" fill="#fffbfb"/>
+      <path id="Path_6" data-name="Path 6" d="M42.426,37.989a1.471,1.471,0,0,1,2.349-1.772l8.053,10.566a1.536,1.536,0,1,1-2.453,1.851Z" transform="translate(1156.455 707.184)" fill="#c4c4c4"/>
+      <path id="Path_7" data-name="Path 7" d="M51.173,32.2a1.487,1.487,0,0,1,2.6-1.451l6.524,11.538A1.553,1.553,0,1,1,57.582,43.8Z" transform="translate(1154.24 708.596)" fill="#c4c4c4"/>
+      <path id="Path_8" data-name="Path 8" d="M60.391,27.062a1.487,1.487,0,0,1,2.808-.981l4.434,12.491A1.553,1.553,0,1,1,64.7,39.6Z" transform="translate(1151.908 709.822)" fill="#c4c4c4"/>
+      <rect id="Rectangle_12" data-name="Rectangle 12" width="12.641" height="24.962" rx="6.32" transform="matrix(0.865, -0.502, 0.502, 0.865, 1218.514, 772.892)" fill="#fa7902"/>
+    </g>
+  </g>
+</svg>

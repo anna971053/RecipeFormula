@@ -1,0 +1,30 @@
+/*圖片取代文字技巧*/
+@mixin text-hidden{
+	display:block;
+	text-indent:101%; /*首行縮排*/
+	overflow:hidden; /*自動隱藏超出的文字或圖片*/
+	white-space:nowrap; /*使元素在第一排上面，不斷行*/
+}
+//section
+@mixin jumbotron {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+//circle
+@mixin circle {
+	content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #FDDEC0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+//字距
+@mixin letter-spacing($size) {
+	letter-spacing:$size;
+}

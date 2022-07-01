@@ -1,0 +1,405 @@
+section{
+    padding: 4em 2em;
+    text-align: center;
+}
+// degree
+.degree{
+    p{
+        color: $gray;
+        font-size: $font-s;
+        line-height: 1.5;
+        @include letter-spacing(1px);
+    }
+    ul{
+        display: flex;
+        padding-top: 2em;
+    }
+    li{
+        width: 31.333%;
+        margin: 1% 1% 2%;
+        h2{
+            color:$blue;
+            @include p-bold;
+            font-size: 24px;
+            margin-bottom: 0.5em;
+            @include letter-spacing(1px);
+        }
+        p{
+            font-size: 16px;
+        }
+        img{
+            margin-top: 1em;
+        }
+        :nth-child(3){
+            display: none;
+        }
+    }
+}
+.percent{
+    margin-left: 1%;
+    @include p-bold;
+    h3{
+        color:$blue;
+        font-size: 20px;
+        text-align: left;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0;
+        .zero{
+            text-align: start;
+        }
+        .hundred{
+            text-align: end;
+        }
+    }
+    li{
+        color:$sunset;
+        font-size: 20px;
+        padding-top: 0;
+    }
+    img{
+        padding: 0 1%;
+    }
+}
+@include pad{
+    .degree{
+        p{
+            font-size: 18px;
+        }
+        ul li h2{
+            font-size: $font-s;
+        }
+    }
+}
+@include iphone-XR{
+    .degree ul{
+        flex-direction: column;
+        li{
+            width: 98%;
+            margin-bottom: 2em;
+            :nth-child(3){
+                display: block;
+                line-height: 1.5;
+                font-weight: bold;
+                color:$sunset;
+            }
+        }
+    }
+    .degree .percent{
+        display: none;
+    }
+}
+//method
+.method{
+    p{
+        color: $gray;
+        font-size: 20px;
+        line-height: 1.5;
+        @include letter-spacing(1px);
+    }
+    ul{
+        display: flex;
+        text-align: start;
+        padding-top: 2em;
+        li{
+            width: 48%;
+            margin: 1% 1%;
+        }
+        h4{
+            color: $blue;
+            @include p-bold;
+            font-size: 24px;
+            margin-bottom: 0.5em;
+            @include letter-spacing(1px);
+        }
+        p{
+            margin-bottom: 10%;
+            line-height: 1.5;
+        }
+    }
+}
+@include pad-air{
+    .method {
+        p{
+            font-size: 18px;
+        }
+        ul h4{
+            font-size: 20px;
+        }
+    }
+}
+@include iphone-XR{
+    .method ul {
+        flex-direction: column;
+        li{
+            width: 98%;
+        }
+        .method-img{
+            display: none;
+        }
+    }
+}
+//steps
+.steps{
+    background: $sunset;
+    padding-top: 7em;
+    margin-bottom: -7em;
+    ul{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1em;
+    }
+
+}
+.steps ul li{
+    background: white;
+    padding: 4em 2em;
+    border-radius: 1em;
+    .icon-container{
+        height: 100px;
+        display: grid;
+        place-content: center;
+        margin: 0 auto;
+
+        &.one{
+            width: 50px;      
+        }
+        &.two{
+            width: 100px;
+        }
+        &.three{
+            width: 60px;
+        }
+    }
+    .step-title{
+        font-weight: bold;
+        padding: 1em 0;
+        font-size: 20px;
+    }
+    .step-desc{
+        color: $gray;
+        line-height: 1.5;
+        font-size: 16px;
+        text-align: center;
+        padding: 0 50px;
+    }
+}
+@include pad-air{
+    .steps ul li {
+        padding: 2em;
+        .step-title{
+            font-size: 18px;
+        }
+        .step-desc{
+            padding: 0px;
+            width: 170px;
+        }
+    }
+}
+@media (max-width:812px) {
+    .steps ul{
+        grid-template-columns:none;
+        li .step-desc{
+            width: 98%;
+            margin:0 1%;
+            margin-bottom: 2em;
+        }
+    }
+    
+}
+//channel
+.channel{
+    margin-top: 5em;
+    ul{
+        display: flex;
+        .background{
+            padding-top: 4em;
+            padding-left: 1em;
+        }
+    }
+}
+.channel ul li{
+    width: 48%;
+    margin: 1% 1%;
+    .channel-intro{
+        padding: 0 110px;
+        text-align: justify;
+        p{
+            font-size: 20px;
+            line-height: 1.2;
+            color:$gray;
+            @include letter-spacing(1px);
+            margin-bottom: 1em;
+        }
+        a img{
+            margin-top: 1em;
+        }
+    }
+}
+@include pad-air{
+    .channel ul {
+        .background{
+            padding-top: 8em;
+            padding-left: 0em;
+        }
+        li .channel-intro{
+            padding: 0px;
+        }    
+    }
+}
+@include pad{
+    .channel ul li .channel-intro p{
+        font-size: 18px;
+    }
+}
+@include iphone-XR{
+    .channel ul{
+        flex-direction: column;
+        .background{
+            display: none;
+        }
+        li{
+            width: 98%;
+        }
+    }
+}
+//measurement
+.measurement{
+    p{
+        color: $gray;
+        line-height: 1.5;
+    }
+    .left{
+        padding-top: 2em;
+        .meas-text{
+            margin-bottom: 6em;
+            text-align: justify;
+            @include letter-spacing(1px);
+        }
+        h4{
+            color:$blue;
+            @include p-bold;
+            font-size: 24px;
+            margin-bottom: 0.5em;
+        }
+        
+        img{
+            display: none;
+        }
+    }
+
+    .right{
+        padding: 2em 0 0 10em;
+        display: flex;
+        flex-direction: column;
+
+        img{
+            margin-bottom: 1em;
+        }
+        :nth-child(1){
+            width: 300px;
+            height: 200px;
+        }
+        :nth-child(2){
+            width: 300px;
+        }
+        :nth-child(3){
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+@include pad-air{
+    .measurement {
+        .left {
+            h4{
+                font-size: 20px;
+            }
+            .meas-text {
+                margin-bottom: 8em;
+            }
+            
+        }
+        .right{
+            padding: 2em 0 0 2em;
+            :nth-child(3){
+                padding: 2em;
+            }
+        }
+    }
+}
+@include iphone-XR{
+    .measurement {
+        .right{
+            display: none;
+        }
+        .left{
+            width: 98%;
+            img{
+                display: block;
+                margin-top: 2em;
+            }
+            .meas-text{
+                margin-bottom: 4em;
+            }
+        } 
+    }
+}
+//tips
+.tips{
+    p{
+        color: $gray;
+        line-height: 1.5;
+    }
+    .tips-intro{
+        padding-bottom: 2em;
+        text-align: justify;
+    }
+    .left{
+        float: left;
+        width: 48%;
+        li{
+            text-align: justify;
+            @include letter-spacing(1px);
+            padding-bottom:2em;
+            h4{
+                color:$blue;
+                @include p-bold;
+                font-size: 20px;
+                margin-bottom: 0.5em;
+            }
+            
+        }
+    }
+    .right{
+        float: right;
+        width: 48%;
+        margin-top: 6em;
+    }
+}
+@include pad-air{
+    .tips {
+        .left{
+            li{
+                h4{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@include iphone-XR{
+    .tips{
+        .left{
+            width: 98%;
+        }
+        .right{
+            display: none;
+        }
+    }
+}

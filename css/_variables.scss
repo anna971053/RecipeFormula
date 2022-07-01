@@ -1,0 +1,29 @@
+//color
+$green:#494D38;
+$white:#FFFFFF;
+$orange:#FA7902;
+$orange-red:#FCB500;
+$sunset:#F1C270;
+$blue:#24487E;
+$gray:#3B3B3B;
+$beige:#FDDEC0;
+
+// Navigation Variables
+$content-width: 1000px;
+$breakpoint: 799px;
+$nav-height: 70px;
+$nav-background: $green;
+$nav-font-color: $white;
+$link-hover-color: $sunset;
+
+//font-family
+@mixin p-bold{
+	font-family: 'Poppins',arial;
+	font-weight: bold;
+}
+//font-size
+$font-xl: 40px;
+$font-l: 30px;
+$font-m: 24px;
+$font-s: 20px;
+$font-xs: 16px;

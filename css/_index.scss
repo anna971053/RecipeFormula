@@ -1,0 +1,252 @@
+.hero{
+    @include jumbotron;
+    position: relative;
+    background: $sunset;
+    .banner-text{
+        position: absolute;
+        top: 40%;
+        left: 60%;
+        h1{
+            font-weight: bold;
+            font-size: 40px;
+            color: $green;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+        h2{
+            font-size: 20px;
+            color: $green;
+        }
+        span{
+            color:$orange;
+        }
+    }
+}
+@include pad-air{
+    .hero{
+        z-index: -1;
+    }
+    .hero .banner-text{
+        top: 30%;
+        h1{
+            font-size: $font-l;
+        }
+        h2{
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width: 798px) {
+    .hero {
+        position: absolute;
+    }
+}
+@media (max-width:700px){
+    .hero .banner-text {
+        h1{
+            font-size: $font-m;
+        }
+    }
+}
+@include iphone-XR {
+    .hero img{
+        transform: translateX(-40px);
+    }
+    .hero .banner-text{
+        margin-right: 0.5em;
+        left: 55%;
+        h1{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        h2{
+            font-size: 12px;
+        }
+    }
+    
+}
+@include iphone-SE{
+    .hero .banner-text{
+        left: 50%;
+    }
+}
+section{
+    padding: 4em 2em;
+}
+@include pad{
+    section{
+        padding: 2em;
+    }
+}
+.left{
+    float: left;
+    width: 48%;
+    margin: 1% 1%;
+}
+.right{
+    float: right;
+    width: 48%;
+    margin: 1% 1%;
+}
+.clearfix{
+    clear: both;
+}
+.reasons{
+    text-align: justify;
+    .left ul{
+        display: flex;
+        flex-direction: column;
+        h4{
+            color:$blue;
+            font-size: $font-m;
+            font-weight: bold;
+        }
+        li{
+            padding: 1em 0;
+            
+            p{
+                padding: 1em 0;
+            }
+        }
+    }
+    .right img{
+        height: 750px;
+        padding-left: 3em;
+    }
+}
+@include pad-air{
+    .reasons .left{
+        width: 98%;
+        
+        ul h4{
+            font-size: $font-s;
+        }
+    }
+    .reasons .right{
+        display: none;
+    }
+}
+@media (max-width:798px){
+    .reasons .left{margin-top: 16em;}
+}
+@include iphone-XR{
+    .reasons .left{
+        margin-top: 10em;
+    }
+}
+@include iphone-SE{
+    .reasons .left{
+        margin-top: 8em;
+    }
+}
+.function{
+    h3{
+        color: $blue;
+        font-size: $font-m;
+        font-weight: bold;
+        margin: 0 0 2% 1%;
+        line-height: 1.35;
+    }
+    ul{
+        display: flex;
+        li{
+            width: 31.333%;
+            margin: 1% 1%;
+            img{
+                margin-bottom: 1em;
+            }
+            h4{
+                font-weight: bold;
+            }
+            .func-text{
+                color:$gray;
+                line-height: 2;
+                text-align: justify;
+            }
+        }
+    }
+}
+@include pad{
+    .function h3{
+        font-size: $font-s;
+    }
+    .function ul{
+        flex-direction: column;
+        li{
+            width: 98%;
+            .func-text{
+                margin-left: 6em;
+            }
+        }
+    }
+}
+@include iphone-XR{
+    .function ul li .func-text{
+        margin:0 0 1em 0;
+    }
+}
+.about{
+    background: $green;
+    padding: 2em;
+    ul{
+        display: flex;
+    }
+    li{
+        margin: 1% 1%;
+    }
+    .about-text{
+        width: 68%;
+        align-self: center;
+        text-align: justify;
+        h4{
+            @include p-bold;
+            @include letter-spacing(2px);
+            color:$beige;
+            font-size: 30px;
+            margin-bottom: 5%;
+        }
+        p{
+            color:$white;
+            @include letter-spacing(1px);
+            line-height: 1.5;
+            padding-bottom: 2em;
+        }
+    }
+    .about-img{
+        width: 28%;
+        img{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+    }
+}
+@media (max-width:1150px){
+    .about {
+        .about-text,.about-img{
+            width: 48%;
+        }
+    }
+}
+@media (max-width:600px){
+    .about {
+        ul{
+            flex-direction: column;
+        }
+        .about-text,.about-img{
+            width: 98%;
+        }
+    }
+}
+.knowmore{
+    text-align: center;
+    padding: 1em;
+    @include p-bold;
+    font-size: 24px;
+    .green{
+        color:$green;
+    }
+    .yellow a{
+        color:$orange-red;
+    }
+}
