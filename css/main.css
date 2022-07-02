@@ -398,12 +398,6 @@ section {
   padding: 4em 2em;
 }
 
-@media (max-width: 768px) {
-  section {
-    padding: 2em;
-  }
-}
-
 .left {
   float: left;
   width: 48%;
