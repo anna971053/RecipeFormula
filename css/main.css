@@ -541,7 +541,7 @@ section {
 }
 
 @media (min-width: 1550px) {
-  .function ul .func-text {
+  .function ul li .func-text {
     padding-left: 3em;
   }
 }
@@ -633,6 +633,12 @@ section {
 
 .knowmore .yellow a {
   color: #FCB500;
+}
+
+@media screen and (min-width: 1550px) {
+  section {
+    padding: 10em 10em 4em;
+  }
 }
 
 section {
