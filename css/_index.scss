@@ -226,6 +226,11 @@ section{
         }
     }
 }
+@media (min-width:1550px){
+    .about{
+        padding:2em 10em;
+    }
+}
 @media (max-width:1150px){
     .about {
         .about-text,.about-img{
