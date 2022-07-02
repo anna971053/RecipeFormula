@@ -1077,6 +1077,12 @@ section {
   margin-top: 6em;
 }
 
+@media (min-width: 1550px) {
+  .tips .right {
+    margin-top: 0em;
+  }
+}
+
 @media (max-width: 820px) {
   .tips .left li h4 {
     font-size: 18px;

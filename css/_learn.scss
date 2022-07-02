@@ -380,6 +380,11 @@ section{
         margin-top: 6em;
     }
 }
+@media (min-width:1550px){
+    .tips .right{
+        margin-top: 0em;
+    }
+}
 @include pad-air{
     .tips {
         .left{
