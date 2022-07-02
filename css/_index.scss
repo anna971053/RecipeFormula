@@ -185,6 +185,11 @@ section{
         margin:0 0 1em 0;
     }
 }
+@media (min-width:1550px){
+    .function ul .func-text{
+        padding-left: 3em;
+    }
+}
 .about{
     background: $green;
     padding: 2em;
